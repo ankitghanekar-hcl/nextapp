@@ -1,11 +1,8 @@
-module.exports = {
-  images: {
-    domains: ["cdn.sanity.io"],
-    loader: "custom"
-  },
-  swcMinify: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   experimental: {
-    legacyBrowsers: false,
-    browsersListForSwc: true
-  }
-};
+    appDir: true,
+  },
+}
+
+module.exports = nextConfig
